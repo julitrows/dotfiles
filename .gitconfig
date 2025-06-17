@@ -1,0 +1,52 @@
+[core]
+  excludesfile = /Users/julio/.gitignore_global
+  pager = delta
+[user]
+  name = Julio AG
+  email = julio.antequera.galiano@gmail.com
+[branch]
+  sort = -committerdate
+[column]
+  ui = auto
+[commit]
+  template = /Users/julio/.stCommitMsg
+  verbose = true
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  process = git-lfs filter-process
+  required = true
+  smudge = git-lfs smudge -- %f
+[help]
+  autocorrect = prompt
+[init]
+  defaultBranch = main
+[interactive]
+  diffFilter = delta --color-only
+[merge]
+  ff = no
+  conflictstyle = diff3
+[fetch]
+  all = true
+  prune = true
+  pruneTags = true
+[pull]
+  rebase = true
+[push]
+  default = current
+  autoSetupRemote = true
+[rerere]
+  enabled = true
+  autoupdate = true
+[tag]
+  sort = version:refname
+
+[delta]
+  navigate = true    # use n and N to move between diff sections
+  # delta detects terminal colors automatically; set one of these to disable auto-detection
+  # dark = true
+  # light = true
