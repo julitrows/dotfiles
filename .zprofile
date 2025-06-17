@@ -1,10 +1,17 @@
-eval "$(/usr/local/bin/brew shellenv)"
+if [[ $(uname -m) == 'arm64' ]]; then
+  BREW_HOME=/opt/homebrew/bin
+else
+  BREW_HOME=/usr/local/bin
+fi
+
+# homebrew
+eval "$($BREW_HOME/brew shellenv)" # Silicon Macbook
 
 # mise
 if [[ "$TERM_PROGRAM" == "vscode" ]]; then
-  eval "$($HOME/.local/bin/mise activate zsh --shims)"
+  eval "$($BREW_HOME/mise activate zsh --shims)"
 else
-  eval "$($HOME/.local/bin/mise activate zsh)"
+  eval "$($BREW_HOME/mise activate zsh)"
 fi
 
 # Set up fzf key bindings and fuzzy completion
