@@ -98,6 +98,10 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
+# For lazygit to pick up the config where in .config
+# to be fixed by: https://github.com/jesseduffield/lazygit/pull/3989
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
@@ -114,5 +118,3 @@ alias wezconf="nvim ~/.wezterm.lua"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 EDITOR=nvim
-
-
