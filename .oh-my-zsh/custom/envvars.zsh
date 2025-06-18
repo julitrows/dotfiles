@@ -21,3 +21,10 @@ fi
 # For lazygit to pick up the config where in .config
 # to be fixed by: https://github.com/jesseduffield/lazygit/pull/3989
 export XDG_CONFIG_HOME="$HOME/.config"
+
+# RMD AWS PROFILES
+export AWS_PROFILE="developer"
+
+# PATH
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
