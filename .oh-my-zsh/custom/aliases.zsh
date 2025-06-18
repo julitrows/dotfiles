@@ -22,3 +22,6 @@
 # Config
 alias zshconf="nvim ~/.zshrc"
 alias wezconf="nvim ~/.wezterm.lua"
+
+# Rails
+alias migratedb="bundle exec rails db:migrate db:test:prepare parallel:prepare"
