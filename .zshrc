@@ -32,11 +32,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
+zstyle ':omz:update' frequency 7
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -77,7 +77,12 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(1password alias-finder aliases fzf gh git)
+
+zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
+zstyle ':omz:plugins:alias-finder' longer yes # disabled by default
+zstyle ':omz:plugins:alias-finder' exact yes # disabled by default
+zstyle ':omz:plugins:alias-finder' cheaper yes # disabled by default
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,33 +93,8 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
-# For lazygit to pick up the config where in .config
-# to be fixed by: https://github.com/jesseduffield/lazygit/pull/3989
-export XDG_CONFIG_HOME="$HOME/.config"
-
-# Set personal aliases, overriding those provided by Oh My Zsh libs,
-# plugins, and themes. Aliases can be placed here, though Oh My Zsh
-# users are encouraged to define aliases within a top-level file in
-# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
-# - $ZSH_CUSTOM/aliases.zsh
-# - $ZSH_CUSTOM/macos.zsh
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-alias zshconf="nvim ~/.zshrc"
-alias wezconf="nvim ~/.wezterm.lua"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-export EDITOR='nvim'
