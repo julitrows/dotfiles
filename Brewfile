@@ -1,5 +1,6 @@
 brew "ast-grep"
 brew "awscli"
+brew "circleci"
 brew "fd"
 brew "ffmpeg"
 brew "fzf"
