@@ -5,10 +5,10 @@ gui:
   expandFocusedSidePanel: true
   filterMode: 'fuzzy'
   nerdFontsVersion: '3'
-  showBottomLine: false
-  showCommandLog: false
+  showBottomLine: true
+  showCommandLog: true
   showDivergenceFromBaseBranch: arrowAndNumber
-  showFileTree: false
+  showFileTree: true
   skipRewordInEditorWarning: true
   theme:
     activeBorderColor:
@@ -39,17 +39,3 @@ git:
   parseEmoji: true
 notARepository: 'quit'
 promptToReturnFromSubprocess: false
-keybinding:
-  universal:
-    # return: 'q'
-    prevBlock-alt: '<c-k>'
-    nextBlock-alt: '<c-j>'
-    nextTab: 'l'
-    prevTab: 'h'
-    prevScreenMode: '-'
-  commits:
-    moveDownCommit: 'J'
-    moveUpCommit: 'K'
-  files:
-    commitChanges: 'C'
-    commitChangesWithEditor: 'c'
