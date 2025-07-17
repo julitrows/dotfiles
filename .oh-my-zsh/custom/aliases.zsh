@@ -25,3 +25,4 @@ alias wezconf="nvim ~/.wezterm.lua"
 
 # Rails
 alias migratedb="bundle exec rails db:migrate db:test:prepare parallel:prepare"
+alias lg="lazygit"
