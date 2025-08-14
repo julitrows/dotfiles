@@ -24,10 +24,11 @@ alias zshconf="nvim ~/.zshrc"
 alias wezconf="nvim ~/.wezterm.lua"
 
 # Rails
-alias migratedb="bundle exec rails db:migrate db:test:prepare parallel:prepare"
+alias assets="rm -rf public/assets public/packs public/packs-test && bundle exec rails assets:clobber assets:precompile"
+alias dump="bundle exec bin/dumpling download"
 alias lg="lazygit"
-alias rspec="nocorrect rspec "
-alias spec="rspec"
+alias migratedb="bundle exec rails db:migrate db:test:prepare parallel:prepare"
+alias parallel="bundle exec parallel_rspec -n 8"
 
 # RubiconMD
 alias list_instances="~/Code/rmd-infra-utils/scripts/list-rubicon-instances.sh"
