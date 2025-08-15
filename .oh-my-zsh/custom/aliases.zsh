@@ -22,3 +22,13 @@
 # Config
 alias zshconf="nvim ~/.zshrc"
 alias wezconf="nvim ~/.wezterm.lua"
+alias dotfiles="nvim ~/Code/dotfiles"
+
+alias lg="lazygit"
+alias ls="lsd"
+
+alias brewfile="rm Brewfile && brew bundle dump"
+alias letsbrew="brew update && brew upgrade && brew cleanup"
+
+
+alias wthr="curl wttr.in/Sevilla"
