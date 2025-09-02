@@ -18,3 +18,5 @@ fi
 source <(fzf --zsh)
 
 export PATH="$HOME/.local/bin:$PATH" # cursor-agent
+
+fastfetch

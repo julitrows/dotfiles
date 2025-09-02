@@ -33,3 +33,13 @@ alias parallel="bundle exec parallel_rspec -n 8"
 # RubiconMD
 alias list_instances="~/Code/rmd-infra-utils/scripts/list-rubicon-instances.sh"
 alias list_hosts="cat ~/.ssh/config | grep -E ^Host | grep -v '*'"
+alias dotfiles="nvim ~/Code/dotfiles"
+
+alias lg="lazygit"
+alias ls="lsd"
+
+alias brewfile="rm Brewfile && brew bundle dump"
+alias letsbrew="brew update && brew upgrade && brew cleanup"
+
+
+alias wthr="curl wttr.in/Sevilla"
