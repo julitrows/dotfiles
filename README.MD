@@ -45,3 +45,8 @@ lrwxr-xr-x@  1 <you>  staff    26B Jun 17 14:13 .wezterm.lua -> Code/dotfiles/.w
 lrwxr-xr-x@ 1 <you>  staff    53B Jun 17 15:00 config.yml -> /Users/<you>/Code/dotfiles/.config/lazygit/config.yml
 # ...
 ```
+
+## TODOs
+
+Check how to use stow to automate symlinking
+Check out [Nate Berkopec's dotfiles](https://github.com/nateberkopec/dotfiles) for inspo/rubyfication
