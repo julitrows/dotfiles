@@ -1,15 +1,5 @@
 {
   "mcpServers": {
-    "Atlassian": {
-      "command": "npx",
-      "args": [
-        "mcp-remote",
-        "https://mcp.atlassian.com/v1/sse"
-      ]
-    },
-    "GitHub": {
-      "command": "/Users/julio/.cursor/mcp_scripts/github.sh"
-    },
     "CircleCI": {
       "command": "/Users/julio/.cursor/mcp_scripts/circleci.sh"
     }
