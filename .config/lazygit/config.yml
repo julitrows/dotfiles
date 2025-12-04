@@ -33,9 +33,9 @@ gui:
 git:
   autoFetch: false
   autoForwardBranches: none
-  paging:
-    colorArg: always
-    pager: delta --dark --side-by-side --paging=never --tabs=2
+  pagers:
+    - colorArg: always
+      pager: delta --dark --side-by-side --paging=never --tabs=2
   parseEmoji: true
 notARepository: 'quit'
 promptToReturnFromSubprocess: false
