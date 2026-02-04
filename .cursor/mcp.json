@@ -2,6 +2,21 @@
   "mcpServers": {
     "CircleCI": {
       "command": "/Users/julio/.cursor/mcp_scripts/circleci.sh"
+    },
+    "GitHub": {
+      "command": "/Users/julio/.cursor/mcp_scripts/github.sh"
+    },
+    "Snyk": {
+      "command": "/Users/julio/Library/Application Support/snyk/vscode-cli/snyk-macos-arm64",
+      "args": [
+        "mcp",
+        "-t",
+        "stdio"
+      ],
+      "env": {
+        "SNYK_API": "https://api.snyk.io",
+        "IDE_CONFIG_PATH": "Cursor"
+      }
     }
   }
 }
