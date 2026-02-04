@@ -20,26 +20,27 @@
 # For a full list of active aliases, run `alias`.
 #
 # Config
-alias zshconf="nvim ~/.zshrc"
-alias wezconf="nvim ~/.wezterm.lua"
-
+alias zshconf="cursor ~/.zshrc"
+alias wezconf="cursor ~/.wezterm.lua"
+alias dotfiles="cursor ~/Code/dotfiles"
 # Rails
 alias assets="rm -rf public/assets public/packs public/packs-test && bundle exec rails assets:clobber assets:precompile"
-alias dump="bundle exec bin/dumpling download"
-alias lg="lazygit"
 alias migratedb="bundle exec rails db:migrate db:test:prepare parallel:prepare"
 alias parallel="bundle exec parallel_rspec -n 8"
 
 # RubiconMD
+alias dump="bundle exec bin/dumpling download"
 alias list_instances="~/Code/rmd-infra-utils/scripts/list-rubicon-instances.sh"
 alias list_hosts="cat ~/.ssh/config | grep -E ^Host | grep -v '*'"
-alias dotfiles="nvim ~/Code/dotfiles"
+alias dotfiles="cursor ~/Code/dotfiles"
 
+# Tools
 alias lg="lazygit"
 alias ls="lsd"
 
+# Homebrew
 alias brewfile="rm Brewfile && brew bundle dump"
 alias letsbrew="brew update && brew upgrade && brew cleanup"
 
-
+# Other
 alias wthr="curl wttr.in/Sevilla"
