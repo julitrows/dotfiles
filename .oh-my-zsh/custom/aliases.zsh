@@ -24,7 +24,7 @@ alias zshconf="nvim ~/.zshrc"
 alias wezconf="nvim ~/.wezterm.lua"
 alias dotfiles="nvim ~/Code/dotfiles"
 
-alias concertus="cd ~/Code/concertus/ && git pull && cargo run --release"
+alias noctavox="cd ~/Code/noctavox/ && git pull && cargo run --release"
 alias flac2mp3="mkdir -p mp3; for f in *.flac; do ffmpeg -i \"$f\" -ab 320k -acodec libmp3lame \"mp3/${f%.flac}.mp3\"; done"
 alias lg="lazygit"
 alias ls="lsd"
