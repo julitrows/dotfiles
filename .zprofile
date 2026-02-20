@@ -21,3 +21,6 @@ export PATH="$HOME/.local/bin:$PATH" # cursor-agent
 export PATH="/opt/homebrew/opt/libpq@17/bin:$PATH"
 
 fastfetch
+
+# Added by Obsidian
+export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
