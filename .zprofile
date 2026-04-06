@@ -17,7 +17,6 @@ fi
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-export PATH="$HOME/.local/bin:$PATH" # cursor-agent
 export PATH="/opt/homebrew/opt/libpq@17/bin:$PATH"
 
 fastfetch

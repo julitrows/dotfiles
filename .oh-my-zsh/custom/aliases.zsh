@@ -20,9 +20,9 @@
 # For a full list of active aliases, run `alias`.
 #
 # Config
-alias zshconf="cursor ~/.zshrc"
-alias wezconf="cursor ~/.wezterm.lua"
-alias dotfiles="cursor ~/Code/dotfiles"
+alias zshconf="code ~/.zshrc"
+alias wezconf="code ~/.wezterm.lua"
+alias dotfiles="code ~/Code/dotfiles"
 # Rails
 alias assets="rm -rf public/assets public/packs public/packs-test && bundle exec rails assets:clobber assets:precompile"
 alias migratedb="bundle exec rails db:migrate db:test:prepare parallel:prepare"
@@ -37,7 +37,7 @@ alias ssh_qa="aws ssm start-session --target i-07f454bef3cc22f62 --document rmd-
 alias dump="bundle exec bin/dumpling download"
 alias list_instances="~/Code/rmd-infra-utils/scripts/list-rubicon-instances.sh"
 alias list_hosts="cat ~/.ssh/config | grep -E ^Host | grep -v '*'"
-alias dotfiles="cursor ~/Code/dotfiles"
+alias dotfiles="code ~/Code/dotfiles"
 
 # Tools
 alias lg="lazygit"
