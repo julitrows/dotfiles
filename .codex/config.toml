@@ -1,0 +1,8 @@
+openai_base_url = "https://llm-gateway.dev.signifyhealth.com"
+model = "gpt-5.4"
+
+[projects."/Users/julio/Code/rubicon"]
+trust_level = "trusted"
+
+[notice.model_migrations]
+"gpt-5.3-codex" = "gpt-5.4"
