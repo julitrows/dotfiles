@@ -2,5 +2,6 @@
   "statusLine": {
     "type": "command",
     "command": "curl -s -X GET \"https://llm-gateway.dev.signifyhealth.com/key/info\" -H \"Authorization: Bearer $ANTHROPIC_AUTH_TOKEN\" | jq -r '.info | \"Budget Status: $\\((.spend * 100 | round) / 100) / $\\(.max_budget) (Resets: \\(.budget_reset_at[0:10]))\"'"
-  }
+  },
+  "effortLevel": "high"
 }

@@ -1,7 +1,14 @@
 openai_base_url = "https://llm-gateway.dev.signifyhealth.com"
 model = "gpt-5.4"
+model_reasoning_effort = "xhigh"
 
 [projects."/Users/julio/Code/rubicon"]
+trust_level = "trusted"
+
+[projects."/Users/julio/Code/rubicon-circleci-ruby-browser-image"]
+trust_level = "trusted"
+
+[projects."/Users/julio/Code/rubicon-angular"]
 trust_level = "trusted"
 
 [notice.model_migrations]
